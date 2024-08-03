@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.h2-box {
+    background-color: #ff0000;
+    border: 2px solid #d32f2f;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.h2-box h2 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+
+#productos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.producto {
+    background-color: #ff0000;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.producto:hover img {
+    transform: scale(1.1);
+}
+
+.producto h3 {
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+.producto p {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.producto input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 60px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff0000;
+}
+
+
+#mensaje {
+    color: red;
+    margin-top: 20px;
+}
+
+#total {
+    color: green;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+
+footer {
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
